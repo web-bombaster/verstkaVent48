@@ -194,3 +194,57 @@
         font-weight: 400;
     }
 }
+
+.product-price {
+    margin-bottom: 22px;
+
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+}
+
+.price-current {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.price-old {
+    font-size: 16px;
+    text-decoration-line: line-through;
+    color: #767676;
+}
+
+.product-btn {
+
+}
+.product__price {
+}
+.product-price {
+}
+.price-current {
+}
+.price-old {
+}
+.product-btn__box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.product-add {
+}
+.add-basket {
+}
+.shop-btn-wrap {
+}
+.shop-btn {
+}
+.buy-one-click {
+}
+.tpl-button {
+}
+.product-btn__bottom {
+}
+.product-compare {
+}
+.compare {
+}

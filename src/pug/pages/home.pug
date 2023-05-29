@@ -75,26 +75,46 @@ html(lang="ru-RU")
 
                             fieldset
                                 label Выберите диаметр канала (мм)
-                                    select(name="diameter")
+                                    select(name="name1")
                                         option(value="") 100
                                         option(value="") 120
                                         option(value="") 150
                                         option(value="") 180
                                         option(value="") 210
                                 label Выберите модификации
-                                    select(name="diameter")
+                                    select(name="name2")
                                         option(value="") ККВ 100
                                         option(value="") ККВ 120
                                         option(value="") ККВ 150
                                         option(value="") ККВ 180
                                         option(value="") ККВ 210
                                 label Производительность вентилятора ККВ (м3/ч)
-                                    select(name="diameter")
+                                    select(name="name3")
                                         option(value="") 570
                                         option(value="") 680
                                         option(value="") 800
                                         option(value="") 920
                                         option(value="") 1200
 
-                        fieldset
-                            p 123
+                            fieldset.product-btn
+                                .product__price.product-price
+                                    span.price-current 3750.00 ₽
+                                    span.price-old 4600.00 ₽
+
+                                .product-btn__box
+                                    .product-add
+                                        .add-basket
+                                            button.shop-btn-wrap(itemscope='' itemtype='http://schema.org/BuyAction' type='submit' name='submit')
+                                                span.shop-btn В корзину
+                                    .buy-one-click
+                                        a.tpl-button(itemscope='' itemtype='http://schema.org/BuyAction' href='#') Купить в один клик
+
+                                .product-btn__bottom
+                                    a(itemscope='' itemtype='http://schema.org/BuyAction' href='#') Нашли дешевле?
+                                    button.product-compare.compare
+                                        i
+                                        | В сравнение
+
+
+
+
