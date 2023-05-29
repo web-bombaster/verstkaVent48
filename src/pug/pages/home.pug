@@ -3,7 +3,98 @@ include ../includes/mixins
 doctype html
 html(lang="ru-RU")
     include ../includes/head
-    body
-        include ../includes/preloader
+    body.site-app
+        //- include ../includes/preloader
 
-        main
+        main.main.container
+            div(itemscope itemtype="http://schema.org/Product").product
+                h1(itemprop="name").title Вентилятор канальный круглый ККВ 100, 2400 об./мин, 70 Вт, 570 м³/час
+
+                .product-box
+
+                    .product__main
+                        .product__img
+                            .product__photo.product-photo
+                                //- a.product-photo__item.highslide(href='img/product/01.jpg' onclick="return hs.expand(this, {slideshowGroup: 'product'});")
+                                img(src="img/product/01.jpg", alt="").product-photo__img
+                                //- a.product-photo__item.highslide(href='img/product/02.jpg' onclick="return hs.expand(this, {slideshowGroup: 'product'});")
+                                img(src="img/product/02.jpg", alt="").product-photo__img
+                                    //- a.product-photo__item.highslide(href='img/product/03.jpg' onclick="return hs.expand(this, {slideshowGroup: 'product'});")
+                                img(src="img/product/03.jpg", alt="").product-photo__img
+                                img(src="img/product/04.jpg", alt="").product-photo__img
+                                img(src="img/product/05.jpg", alt="").product-photo__img
+
+                            .product-thumbs
+                                img(src="img/product/01.jpg", alt="").product-thumbs__img
+                                img(src="img/product/02.jpg", alt="").product-thumbs__img
+                                img(src="img/product/03.jpg", alt="").product-thumbs__img
+                                img(src="img/product/04.jpg", alt="").product-thumbs__img
+                                img(src="img/product/05.jpg", alt="").product-thumbs__img
+
+                        .product__descr
+                            .rating Рейтинг
+                                .tpl-stars
+                                    .tpl-rating.tpl-active
+                            p Вентилятор канальный круглый ККВ применяются в системе приточной или вытяжной вентиляции в офисных, складских, производственных, небольших покрасочных, продовольственных магазинах и в складах алкоголя.
+
+                            .product__property.product-property
+                                .product-property__item
+                                    .product-property__name Производитель:
+                                    .product-property__value Вент и Винт
+                                .product-property__item
+                                    .product-property__name Вес (кг):
+                                    .product-property__value 2,2
+                                .product-property__item
+                                    .product-property__name Мощность (Ват):
+                                    .product-property__value 70
+
+                        .product__info
+                            .shop2-product-data
+                                .tabs-btn
+                                    li.tabs-btn__item.toggle Описание
+                                    li.tabs-btn__item Характеристики
+                                    li.tabs-btn__item Чертёж
+                                    li.tabs-btn__item Аэродинамические характеристики
+                                    li.tabs-btn__item Акустические характеристики
+                                .tabs-descr
+                                    .tabs-descr__item.toggle
+                                        <p>Вентилятор канальный ККВ &nbsp;производится из высококачественного ударопрочного, термостойкого пластика и стандартно выпускаются диаметром <a href="/magazin/product/ventilyator-kanalnyy-kruglyy-kkv-100">100мм</a>;<a href="/magazin/product/ventilyator-kanalnyy-kruglyy-kkv">125мм</a>;<a href="/magazin/product/ventilyator-kanalnyy-kruglyy-kkv-1">160мм</a>;<a href="/magazin/product/ventilyator-kanalnyy-kruglyy-kkv-2">200мм</a>;<a href="/magazin/product/ventilyator-kanalnyy-kruglyy-kkv-3">250мм</a>;<a href="/magazin/product/ventilyator-kanalnyy-kruglyy-kkv-4">315мм</a>&nbsp;. При сборке вентилятора&nbsp;используются качественные немецкие двигатели EBMPAPST мощностью от 70Вт&nbsp;до 270Вт. и напряжением 220в. К электросети оборудование удобно&nbsp;подключается при помощи электромонтажных клемм типа wago, а это значит, что никакого дополнительного инструмента не понадобится.&nbsp;&nbsp;Не смотря на малую мощность, мотор- колесо выдаёт производительность от 250м3/ч до 2100 м3/ч. От перегрева двигателя защищает встроенная термозащита. Канальные вентиляторы ККВ&nbsp;имеют степень защиты IP 44. Вентилятор круглый канальный&nbsp;монтируется в любом положении и эксплуатируются от -30 до +40<sup>0</sup>С. Благодаря сочетанию качественных комплектующих вентиляторы&nbsp;обладают пониженным уровнем шума по сравнению с аналогичными вентиляторами. Скорость вращения канального вентилятора ККВ&nbsp;можно изменять от 0 до 100 с помощью регуляторов оборота.</p>
+                                        .product-clear.clear-both
+                                    .tabs-descr__item
+                                        p 222
+                                    .tabs-descr__item
+                                        p 333
+                                    .tabs-descr__item
+                                        p 444
+                                    .tabs-descr__item
+                                        p 555
+
+
+                    .product__aside
+                        form(action="").product__params.product-params
+
+                            fieldset
+                                label Выберите диаметр канала (мм)
+                                    select(name="diameter")
+                                        option(value="") 100
+                                        option(value="") 120
+                                        option(value="") 150
+                                        option(value="") 180
+                                        option(value="") 210
+                                label Выберите модификации
+                                    select(name="diameter")
+                                        option(value="") ККВ 100
+                                        option(value="") ККВ 120
+                                        option(value="") ККВ 150
+                                        option(value="") ККВ 180
+                                        option(value="") ККВ 210
+                                label Производительность вентилятора ККВ (м3/ч)
+                                    select(name="diameter")
+                                        option(value="") 570
+                                        option(value="") 680
+                                        option(value="") 800
+                                        option(value="") 920
+                                        option(value="") 1200
+
+                        fieldset
+                            p 123
