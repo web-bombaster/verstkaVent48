@@ -11,7 +11,7 @@ const showText = () => {
 				hiddenText.classList.toggle('active');
 				// console.log(hiddenText.classList.value);
 				// console.log(typeof(e));
-				console.dir(e);
+				// console.dir(e);
 				if (hiddenText.classList.value === 'hidden-text') {
 					e.innerHTML = "Показать больше"; // не работает
 					// console.log('текст скрыт');
