@@ -328,9 +328,13 @@
 }
 .shop-btn {
 }
-.site-app .shop-btn-wrap,
-.site-app .shop-btn-wrap .shop-btn,
-.site-app .buy-one-click .tpl-button {
+// .site-app .shop-btn-wrap,
+// .site-app .shop-btn-wrap .shop-btn,
+// .site-app .buy-one-click .tpl-button {
+
+.site-app .product-box .shop-btn-wrap,
+.site-app .product-box .shop-btn-wrap .shop-btn,
+.site-app .product-box .buy-one-click .tpl-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -345,7 +349,9 @@
 
     transition: .25s;
 }
-.site-app .shop-btn-wrap .shop-btn {
+// .site-app .shop-btn-wrap .shop-btn,
+.site-app .product-box .shop-btn
+{
     background-color: #F15C13;
     color: #fff;
 }
